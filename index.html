@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />\
+       	<link rel="stylesheet" href="themes/biru-peteng.css" />
+        <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+        <link rel="stylesheet" href="themes/jquery.mobile.structure-1.4.5.css" />
+        
+        <title>Barcode Scanner Example</title>
+        
+    </head>
+    <body>
+    <div data-role="page" data-theme="a">
+    
+        <!-- header -->
+		<div data-role="header" data-position="fixed">
+			<a href="#mypanel" data-icon="bars" >Menu</a>
+			<h1>Barcode Scan</h1>
+
+		</div>
+		<!-- header -->
+    
+        <!-- konten -->
+        <div role="main" class="ui-content">
+            <div class="app">
+                <div id="deviceready" class="blink">
+                    <p id="connectingev" class="event listening">Loading</p>
+                    <p id="readyev" class="event received">Device is Ready</p>
+                </div>
+                
+                <pre id="info"></pre>
+            </div>
+        </div>
+		<!-- konten -->
+        
+        
+        <!-- footer -->
+		<div data-role="footer" data-position="fixed"> 
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#"  id="scan" data-role="button" data-icon="eye">SCAN</a></li>
+					<li><a href="#"  id="encode" data-role="button" data-icon="grid" >Generate Barcode</a></li>
+				</ul>
+			</div><!-- /navbar -->
+		</div> 
+		<!-- /footer -->
+        
+        
+        
+    </div>
+	<!-- page -->
+    
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="barcodescanner.js"></script>
+       	<script src="themes/jquery-1.11.1.js"></script>
+        <script src="themes/jquery.mobile-1.4.5.js"></script>
+        <script src="index2.js">
+        </script>
+    </body>
+</html>
